@@ -46,7 +46,7 @@ Konnect でデータプレーンを作成後、表示されるスクリプトか
   - `3bfecf745a`.us.cp.konghq.com:443 であれば、 `3bfecf745a` の部分
 - 証明書と秘密鍵の情報
 
-必要なパラメータを `<repo-root>/security/.env`, `<repo-root>/config/kong/cluster-cert` に格納します。
+必要なパラメータを `.env`, `<repo-root>/security/.env`, `<repo-root>/config/kong/cluster-cert` に格納します。
 
 Kong Gateway(Konnect DP)と Keycloak を起動します。
 
