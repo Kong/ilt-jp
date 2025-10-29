@@ -15,7 +15,7 @@
 
 ## 環境のセットアップ（Kong EE）
 
-`<repo-root>/security` へ移動し、以下のコマンドを実行します。
+`<repo-root>/examples/security` へ移動し、以下のコマンドを実行します。
 
 ```sh
 docker compose up -d
@@ -36,7 +36,7 @@ keycloak   quay.io/keycloak/keycloak:26.4.2   "/opt/keycloak/bin/k…"   keycloa
 | gateway   | Kong Gateway                              |
 | keycloak  | Identity Provider として利用する Keycloak |
 
-また、Kong Gateway, Keycloak の設定は `<repo-root>/security/config` に存在し、コンテナの起動時に自動的に反映されるようにしてあります。
+また、Kong Gateway, Keycloak の設定は `<repo-root>/examples/security/config` に存在し、コンテナの起動時に自動的に反映されるようにしてあります。
 
 ## 環境のセットアップ（Kong Konnect）
 
@@ -46,7 +46,7 @@ Konnect でデータプレーンを作成後、表示されるスクリプトか
   - `3bfecf745a`.us.cp.konghq.com:443 であれば、 `3bfecf745a` の部分
 - 証明書と秘密鍵の情報
 
-必要なパラメータを `.env`, `<repo-root>/security/.env`, `<repo-root>/config/kong/cluster-cert` に格納します。
+必要なパラメータを `.env`, `<repo-root>/examples/security/.env`, `<repo-root>/examples/security/config/kong/cluster-cert` に格納します。
 
 Kong Gateway(Konnect DP)と Keycloak を起動します。
 
