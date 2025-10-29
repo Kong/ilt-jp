@@ -17,7 +17,7 @@ plugins:
       # for demo use only(fixed value)
       client_id:
         - kong
-      # for demo use only(fixed value)
+      # !!!for demo use only(fixed value)!!!
       client_secret:
         - f47ac10b-58cc-4372-a567-0e02b2c3d479
       client_auth:
